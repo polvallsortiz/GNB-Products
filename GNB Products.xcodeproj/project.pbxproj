@@ -3,18 +3,36 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		32CCE8BD88D5C7FD66EB15E4 /* Pods_GNB_Products.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEE7BB809541CA819A06D52C /* Pods_GNB_Products.framework */; };
+		3515EAABF2334D205A08D5DD /* Pods_GNB_Products_GNB_ProductsUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D2AACD9998F618F634B3E56 /* Pods_GNB_Products_GNB_ProductsUITests.framework */; };
+		D90D05C825B974AA000EDDEC /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90D05C725B974AA000EDDEC /* Transaction.swift */; };
+		D90D05CD25B9758C000EDDEC /* Rate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90D05CC25B9758C000EDDEC /* Rate.swift */; };
+		D90D05D225B9762F000EDDEC /* ProductsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90D05D125B9762F000EDDEC /* ProductsPresenter.swift */; };
+		D90D05D725B976E6000EDDEC /* ProductsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90D05D625B976E6000EDDEC /* ProductsService.swift */; };
+		D914310F25B9F6EF00669E87 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = D914310E25B9F6EF00669E87 /* Product.swift */; };
+		D914311C25BAF67000669E87 /* ProductDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D914311B25BAF67000669E87 /* ProductDetailViewController.swift */; };
+		D914312925BAFFD300669E87 /* ProductDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D914312825BAFFD300669E87 /* ProductDetailTableViewCell.swift */; };
+		D914312E25BB082E00669E87 /* RatesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D914312D25BB082E00669E87 /* RatesService.swift */; };
+		D914314D25BD592D00669E87 /* UIVIewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D914314C25BD592D00669E87 /* UIVIewController.swift */; };
+		D914315225BEB62800669E87 /* Decimal.swift in Sources */ = {isa = PBXBuildFile; fileRef = D914315125BEB62800669E87 /* Decimal.swift */; };
+		D914318A25BEF88500669E87 /* PlaceholdersProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = D914318925BEF88400669E87 /* PlaceholdersProvider.swift */; };
+		D98EB32525BF72AA0087C8D6 /* ProductTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98EB32425BF72AA0087C8D6 /* ProductTests.swift */; };
+		D98EB32A25BF73470087C8D6 /* TransactionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98EB32925BF73470087C8D6 /* TransactionTests.swift */; };
+		D98EB32F25BF73900087C8D6 /* RateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98EB32E25BF73900087C8D6 /* RateTests.swift */; };
 		D9E7400525B8EAEE00DE95CE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9E7400425B8EAEE00DE95CE /* AppDelegate.swift */; };
 		D9E7400725B8EAEE00DE95CE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9E7400625B8EAEE00DE95CE /* SceneDelegate.swift */; };
-		D9E7400925B8EAEE00DE95CE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9E7400825B8EAEE00DE95CE /* ViewController.swift */; };
 		D9E7400C25B8EAEE00DE95CE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9E7400A25B8EAEE00DE95CE /* Main.storyboard */; };
 		D9E7400E25B8EAF600DE95CE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D9E7400D25B8EAF600DE95CE /* Assets.xcassets */; };
 		D9E7401125B8EAF600DE95CE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9E7400F25B8EAF600DE95CE /* LaunchScreen.storyboard */; };
 		D9E7401C25B8EAF700DE95CE /* GNB_ProductsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9E7401B25B8EAF700DE95CE /* GNB_ProductsTests.swift */; };
 		D9E7402725B8EAF700DE95CE /* GNB_ProductsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9E7402625B8EAF700DE95CE /* GNB_ProductsUITests.swift */; };
+		D9E7403D25B8EC4B00DE95CE /* ProductsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9E7403C25B8EC4B00DE95CE /* ProductsViewController.swift */; };
+		D9E7404525B8ECA400DE95CE /* ProductsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9E7404425B8ECA400DE95CE /* ProductsTableViewCell.swift */; };
+		DD3D2E2938E838D624B2F51A /* Pods_GNB_ProductsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D633BC1BE6C3B265579D0B3B /* Pods_GNB_ProductsTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,10 +53,31 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		108FC28A761AFFE2B08711A4 /* Pods-GNB Products.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GNB Products.release.xcconfig"; path = "Target Support Files/Pods-GNB Products/Pods-GNB Products.release.xcconfig"; sourceTree = "<group>"; };
+		5B594DBFF937F9C373DFD5D9 /* Pods-GNB Products-GNB ProductsUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GNB Products-GNB ProductsUITests.debug.xcconfig"; path = "Target Support Files/Pods-GNB Products-GNB ProductsUITests/Pods-GNB Products-GNB ProductsUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		6D2AACD9998F618F634B3E56 /* Pods_GNB_Products_GNB_ProductsUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GNB_Products_GNB_ProductsUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		74319382CE7B941F83F9D693 /* Pods-GNB ProductsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GNB ProductsTests.debug.xcconfig"; path = "Target Support Files/Pods-GNB ProductsTests/Pods-GNB ProductsTests.debug.xcconfig"; sourceTree = "<group>"; };
+		8FD85DEFB7477FEA41533150 /* Pods-GNB Products.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GNB Products.debug.xcconfig"; path = "Target Support Files/Pods-GNB Products/Pods-GNB Products.debug.xcconfig"; sourceTree = "<group>"; };
+		A5195DA6479A36D54D6D65FC /* Pods-GNB ProductsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GNB ProductsTests.release.xcconfig"; path = "Target Support Files/Pods-GNB ProductsTests/Pods-GNB ProductsTests.release.xcconfig"; sourceTree = "<group>"; };
+		D3942A79CDD84B3E3A413045 /* Pods-GNB Products-GNB ProductsUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GNB Products-GNB ProductsUITests.release.xcconfig"; path = "Target Support Files/Pods-GNB Products-GNB ProductsUITests/Pods-GNB Products-GNB ProductsUITests.release.xcconfig"; sourceTree = "<group>"; };
+		D633BC1BE6C3B265579D0B3B /* Pods_GNB_ProductsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GNB_ProductsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D90D05C725B974AA000EDDEC /* Transaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
+		D90D05CC25B9758C000EDDEC /* Rate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rate.swift; sourceTree = "<group>"; };
+		D90D05D125B9762F000EDDEC /* ProductsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsPresenter.swift; sourceTree = "<group>"; };
+		D90D05D625B976E6000EDDEC /* ProductsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsService.swift; sourceTree = "<group>"; };
+		D914310E25B9F6EF00669E87 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		D914311B25BAF67000669E87 /* ProductDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailViewController.swift; sourceTree = "<group>"; };
+		D914312825BAFFD300669E87 /* ProductDetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailTableViewCell.swift; sourceTree = "<group>"; };
+		D914312D25BB082E00669E87 /* RatesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatesService.swift; sourceTree = "<group>"; };
+		D914314C25BD592D00669E87 /* UIVIewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIVIewController.swift; sourceTree = "<group>"; };
+		D914315125BEB62800669E87 /* Decimal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Decimal.swift; sourceTree = "<group>"; };
+		D914318925BEF88400669E87 /* PlaceholdersProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceholdersProvider.swift; sourceTree = "<group>"; };
+		D98EB32425BF72AA0087C8D6 /* ProductTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductTests.swift; sourceTree = "<group>"; };
+		D98EB32925BF73470087C8D6 /* TransactionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionTests.swift; sourceTree = "<group>"; };
+		D98EB32E25BF73900087C8D6 /* RateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RateTests.swift; sourceTree = "<group>"; };
 		D9E7400125B8EAEE00DE95CE /* GNB Products.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GNB Products.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9E7400425B8EAEE00DE95CE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D9E7400625B8EAEE00DE95CE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		D9E7400825B8EAEE00DE95CE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D9E7400B25B8EAEE00DE95CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D9E7400D25B8EAF600DE95CE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D9E7401025B8EAF600DE95CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +88,9 @@
 		D9E7402225B8EAF700DE95CE /* GNB ProductsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "GNB ProductsUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9E7402625B8EAF700DE95CE /* GNB_ProductsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GNB_ProductsUITests.swift; sourceTree = "<group>"; };
 		D9E7402825B8EAF700DE95CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D9E7403C25B8EC4B00DE95CE /* ProductsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsViewController.swift; sourceTree = "<group>"; };
+		D9E7404425B8ECA400DE95CE /* ProductsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsTableViewCell.swift; sourceTree = "<group>"; };
+		EEE7BB809541CA819A06D52C /* Pods_GNB_Products.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GNB_Products.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +98,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				32CCE8BD88D5C7FD66EB15E4 /* Pods_GNB_Products.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +106,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD3D2E2938E838D624B2F51A /* Pods_GNB_ProductsTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +114,73 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3515EAABF2334D205A08D5DD /* Pods_GNB_Products_GNB_ProductsUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B8F52ACFBBD993E4F5BA89A3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8FD85DEFB7477FEA41533150 /* Pods-GNB Products.debug.xcconfig */,
+				108FC28A761AFFE2B08711A4 /* Pods-GNB Products.release.xcconfig */,
+				5B594DBFF937F9C373DFD5D9 /* Pods-GNB Products-GNB ProductsUITests.debug.xcconfig */,
+				D3942A79CDD84B3E3A413045 /* Pods-GNB Products-GNB ProductsUITests.release.xcconfig */,
+				74319382CE7B941F83F9D693 /* Pods-GNB ProductsTests.debug.xcconfig */,
+				A5195DA6479A36D54D6D65FC /* Pods-GNB ProductsTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		BA3C01605EBE3C7B39494CCB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EEE7BB809541CA819A06D52C /* Pods_GNB_Products.framework */,
+				6D2AACD9998F618F634B3E56 /* Pods_GNB_Products_GNB_ProductsUITests.framework */,
+				D633BC1BE6C3B265579D0B3B /* Pods_GNB_ProductsTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D90D05C425B97459000EDDEC /* Presenters */ = {
+			isa = PBXGroup;
+			children = (
+				D90D05D125B9762F000EDDEC /* ProductsPresenter.swift */,
+			);
+			path = Presenters;
+			sourceTree = "<group>";
+		};
+		D90D05C525B97462000EDDEC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D90D05C725B974AA000EDDEC /* Transaction.swift */,
+				D90D05CC25B9758C000EDDEC /* Rate.swift */,
+				D914310E25B9F6EF00669E87 /* Product.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D90D05C625B97476000EDDEC /* DataSources */ = {
+			isa = PBXGroup;
+			children = (
+				D90D05D625B976E6000EDDEC /* ProductsService.swift */,
+				D914312D25BB082E00669E87 /* RatesService.swift */,
+			);
+			path = DataSources;
+			sourceTree = "<group>";
+		};
+		D914314B25BD590800669E87 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				D914314C25BD592D00669E87 /* UIVIewController.swift */,
+				D914315125BEB62800669E87 /* Decimal.swift */,
+				D914318925BEF88400669E87 /* PlaceholdersProvider.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		D9E73FF825B8EAEE00DE95CE = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +188,8 @@
 				D9E7401A25B8EAF700DE95CE /* GNB ProductsTests */,
 				D9E7402525B8EAF700DE95CE /* GNB ProductsUITests */,
 				D9E7400225B8EAEE00DE95CE /* Products */,
+				B8F52ACFBBD993E4F5BA89A3 /* Pods */,
+				BA3C01605EBE3C7B39494CCB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,9 +206,13 @@
 		D9E7400325B8EAEE00DE95CE /* GNB Products */ = {
 			isa = PBXGroup;
 			children = (
+				D914314B25BD590800669E87 /* Extensions */,
+				D90D05C625B97476000EDDEC /* DataSources */,
+				D90D05C525B97462000EDDEC /* Models */,
+				D90D05C425B97459000EDDEC /* Presenters */,
+				D9E7403B25B8EC1C00DE95CE /* Views */,
 				D9E7400425B8EAEE00DE95CE /* AppDelegate.swift */,
 				D9E7400625B8EAEE00DE95CE /* SceneDelegate.swift */,
-				D9E7400825B8EAEE00DE95CE /* ViewController.swift */,
 				D9E7400A25B8EAEE00DE95CE /* Main.storyboard */,
 				D9E7400D25B8EAF600DE95CE /* Assets.xcassets */,
 				D9E7400F25B8EAF600DE95CE /* LaunchScreen.storyboard */,
@@ -115,6 +226,9 @@
 			children = (
 				D9E7401B25B8EAF700DE95CE /* GNB_ProductsTests.swift */,
 				D9E7401D25B8EAF700DE95CE /* Info.plist */,
+				D98EB32425BF72AA0087C8D6 /* ProductTests.swift */,
+				D98EB32925BF73470087C8D6 /* TransactionTests.swift */,
+				D98EB32E25BF73900087C8D6 /* RateTests.swift */,
 			);
 			path = "GNB ProductsTests";
 			sourceTree = "<group>";
@@ -128,6 +242,17 @@
 			path = "GNB ProductsUITests";
 			sourceTree = "<group>";
 		};
+		D9E7403B25B8EC1C00DE95CE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D9E7403C25B8EC4B00DE95CE /* ProductsViewController.swift */,
+				D9E7404425B8ECA400DE95CE /* ProductsTableViewCell.swift */,
+				D914311B25BAF67000669E87 /* ProductDetailViewController.swift */,
+				D914312825BAFFD300669E87 /* ProductDetailTableViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +260,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D9E7402B25B8EAF700DE95CE /* Build configuration list for PBXNativeTarget "GNB Products" */;
 			buildPhases = (
+				77249809234A65A9B68D9C48 /* [CP] Check Pods Manifest.lock */,
 				D9E73FFD25B8EAEE00DE95CE /* Sources */,
 				D9E73FFE25B8EAEE00DE95CE /* Frameworks */,
 				D9E73FFF25B8EAEE00DE95CE /* Resources */,
+				7C4F00C5F8C13E70C3EF4CB7 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -152,6 +279,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D9E7402E25B8EAF700DE95CE /* Build configuration list for PBXNativeTarget "GNB ProductsTests" */;
 			buildPhases = (
+				6DC03914FAC19822FA7B7FE3 /* [CP] Check Pods Manifest.lock */,
 				D9E7401325B8EAF700DE95CE /* Sources */,
 				D9E7401425B8EAF700DE95CE /* Frameworks */,
 				D9E7401525B8EAF700DE95CE /* Resources */,
@@ -170,9 +298,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D9E7403125B8EAF700DE95CE /* Build configuration list for PBXNativeTarget "GNB ProductsUITests" */;
 			buildPhases = (
+				5FD29B43C731A7EB73AB2963 /* [CP] Check Pods Manifest.lock */,
 				D9E7401E25B8EAF700DE95CE /* Sources */,
 				D9E7401F25B8EAF700DE95CE /* Frameworks */,
 				D9E7402025B8EAF700DE95CE /* Resources */,
+				B754453E93B2C75649321D2B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -253,14 +383,129 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		5FD29B43C731A7EB73AB2963 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GNB Products-GNB ProductsUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6DC03914FAC19822FA7B7FE3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GNB ProductsTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		77249809234A65A9B68D9C48 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GNB Products-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7C4F00C5F8C13E70C3EF4CB7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GNB Products/Pods-GNB Products-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GNB Products/Pods-GNB Products-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GNB Products/Pods-GNB Products-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B754453E93B2C75649321D2B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GNB Products-GNB ProductsUITests/Pods-GNB Products-GNB ProductsUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GNB Products-GNB ProductsUITests/Pods-GNB Products-GNB ProductsUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GNB Products-GNB ProductsUITests/Pods-GNB Products-GNB ProductsUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		D9E73FFD25B8EAEE00DE95CE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D9E7400925B8EAEE00DE95CE /* ViewController.swift in Sources */,
+				D9E7403D25B8EC4B00DE95CE /* ProductsViewController.swift in Sources */,
+				D9E7404525B8ECA400DE95CE /* ProductsTableViewCell.swift in Sources */,
+				D914310F25B9F6EF00669E87 /* Product.swift in Sources */,
+				D90D05D225B9762F000EDDEC /* ProductsPresenter.swift in Sources */,
+				D90D05C825B974AA000EDDEC /* Transaction.swift in Sources */,
+				D914314D25BD592D00669E87 /* UIVIewController.swift in Sources */,
+				D90D05CD25B9758C000EDDEC /* Rate.swift in Sources */,
+				D914312925BAFFD300669E87 /* ProductDetailTableViewCell.swift in Sources */,
+				D90D05D725B976E6000EDDEC /* ProductsService.swift in Sources */,
+				D914311C25BAF67000669E87 /* ProductDetailViewController.swift in Sources */,
+				D914312E25BB082E00669E87 /* RatesService.swift in Sources */,
 				D9E7400525B8EAEE00DE95CE /* AppDelegate.swift in Sources */,
+				D914318A25BEF88500669E87 /* PlaceholdersProvider.swift in Sources */,
 				D9E7400725B8EAEE00DE95CE /* SceneDelegate.swift in Sources */,
+				D914315225BEB62800669E87 /* Decimal.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,6 +514,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				D9E7401C25B8EAF700DE95CE /* GNB_ProductsTests.swift in Sources */,
+				D98EB32F25BF73900087C8D6 /* RateTests.swift in Sources */,
+				D98EB32A25BF73470087C8D6 /* TransactionTests.swift in Sources */,
+				D98EB32525BF72AA0087C8D6 /* ProductTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -433,10 +681,12 @@
 		};
 		D9E7402C25B8EAF700DE95CE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8FD85DEFB7477FEA41533150 /* Pods-GNB Products.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9ARY36Z3TS;
 				INFOPLIST_FILE = "GNB Products/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -451,10 +701,12 @@
 		};
 		D9E7402D25B8EAF700DE95CE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 108FC28A761AFFE2B08711A4 /* Pods-GNB Products.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9ARY36Z3TS;
 				INFOPLIST_FILE = "GNB Products/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -469,6 +721,7 @@
 		};
 		D9E7402F25B8EAF700DE95CE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 74319382CE7B941F83F9D693 /* Pods-GNB ProductsTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -490,6 +743,7 @@
 		};
 		D9E7403025B8EAF700DE95CE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A5195DA6479A36D54D6D65FC /* Pods-GNB ProductsTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -511,6 +765,7 @@
 		};
 		D9E7403225B8EAF700DE95CE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5B594DBFF937F9C373DFD5D9 /* Pods-GNB Products-GNB ProductsUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -530,6 +785,7 @@
 		};
 		D9E7403325B8EAF700DE95CE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D3942A79CDD84B3E3A413045 /* Pods-GNB Products-GNB ProductsUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

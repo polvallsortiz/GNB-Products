@@ -1,0 +1,24 @@
+PODS:
+  - Alamofire (5.4.1)
+  - HGPlaceholders (0.5.0)
+  - SwiftyJSON (4.3.0)
+
+DEPENDENCIES:
+  - Alamofire (~> 5.2)
+  - HGPlaceholders
+  - SwiftyJSON (~> 4.0)
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - HGPlaceholders
+    - SwiftyJSON
+
+SPEC CHECKSUMS:
+  Alamofire: 2291f7d21ca607c491dd17642e5d40fdcda0e65c
+  HGPlaceholders: cbf8caed8360fc2ab5e8a4610cce61f76fbd2c37
+  SwiftyJSON: 6faa0040f8b59dead0ee07436cbf76b73c08fd08
+
+PODFILE CHECKSUM: 8a76b512fdf7a1c6cd54a93c9b8ec4cb5eb34c8b
+
+COCOAPODS: 1.10.1
